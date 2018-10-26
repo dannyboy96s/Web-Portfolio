@@ -1,0 +1,34 @@
+:root{
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+body{
+    /*remove the horzontal scroll bar*/
+    overflow-x: hidden;
+    margin-top: 60px;
+    font-family: Poppins;
+    background-color: white; 
+   
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Poppins;
+}
+p{
+    font-family: Roboto;
+}
+.navbar-default{
+    background: white;
+    border: 0;
+    font-family: Poppins;
+    box-shadow: var(--shadow);
+}
+.navbar-brand{
+    font-size: 20px;
+    color: black !important;
+    font-weight: bold;
+}  /*this is for the  second nav bar */
+/* media query for when the top nav bar transitons to mobile/tablet width, change the bg color to white*/
+@media(max-width: 800px){
+    #collapsenav{
+        background-color: white;
+    }
+}
